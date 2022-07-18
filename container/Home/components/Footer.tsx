@@ -39,9 +39,18 @@ const Footer = () => {
             position="absolute"
             top="15%"
           />
-          <Box position="absolute" top="40%">
+          <Box
+            position="absolute"
+            top={{
+              base: '35%',
+              lg: '40%',
+            }}
+          >
             <Text
-              fontSize="40px"
+              fontSize={{
+                base: '30px',
+                lg: '40px',
+              }}
               lineHeight="35px"
               color="yellow_primary.1"
               fontWeight="700"
@@ -55,7 +64,10 @@ const Footer = () => {
               color="white"
               textTransform="uppercase"
               fontSize="14px"
-              w="497px"
+              w={{
+                base: '300px',
+                lg: '497px',
+              }}
               mt="23px"
               textAlign="center"
             >

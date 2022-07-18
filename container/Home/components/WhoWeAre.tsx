@@ -13,20 +13,27 @@ const WhoWeAre = () => {
     <Grid templateColumns="repeat(6, 1fr)" gap={4} py="90px">
       <GridItem
         colSpan={{
+          base: 6,
           lg: 3,
           xl: 2,
         }}
       >
         <Box position="relative">
           <Image
-            w="346px"
+            w={{
+              base: '200px',
+              lg: '346px',
+            }}
             src="/assets/images/home/AboutUs/whoweare.png"
             alt="whoweare"
           />
 
           <Box position="absolute" right="0" bottom="0px">
             <Text
-              fontSize="20px"
+              fontSize={{
+                base: '16px',
+                lg: '20px',
+              }}
               fontWeight="900"
               lineHeight="50px"
               textTransform="uppercase"
@@ -47,11 +54,21 @@ const WhoWeAre = () => {
       </GridItem>
       <GridItem
         colSpan={{
+          base: 6,
           lg: 3,
           xl: 4,
         }}
       >
-        <Box paddingLeft="46px">
+        <Box
+          paddingLeft={{
+            base: '20px',
+            lg: '46px',
+          }}
+          paddingRight={{
+            base: '20px',
+            lg: 0,
+          }}
+        >
           <Text
             fontSize="50px"
             lineHeight="70px"

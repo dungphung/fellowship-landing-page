@@ -51,7 +51,16 @@ const NFTCollections = () => {
       >
         BỘ SƯU TẬP nft
       </Text>
-      <SimpleGrid columns={4} mt="70px">
+      <SimpleGrid
+        columns={{
+          base: 1,
+          lg: 4,
+        }}
+        mt="70px"
+        spacing={{
+          base: '50px',
+        }}
+      >
         <ItemNFT
           title="Level 1"
           description={
@@ -91,7 +100,16 @@ const NFTCollections = () => {
           description="trong quá trình chờ làm box,chỗ này thay bằng logo vikomình đã vẽ lại"
         />
       </SimpleGrid>
-      <SimpleGrid columns={3} mt="75px">
+      <SimpleGrid
+        columns={{
+          base: 1,
+          lg: 3,
+        }}
+        mt="75px"
+        spacing={{
+          base: '50px',
+        }}
+      >
         <ItemNFT
           title="Level 5"
           description={

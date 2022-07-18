@@ -7,13 +7,16 @@ const IntroSection = () => {
       bgPosition="0 150px"
       bgRepeat="no-repeat"
       bgSize={{
-        base: '400px',
+        base: '200px',
+        lg: '400px',
         xl: '521px',
       }}
       h={{
-        base: '900px',
+        base: '800px',
+        lg: '900px',
         xl: '1100px',
       }}
+      id="activities"
       position="relative"
     >
       <Text
@@ -31,6 +34,10 @@ const IntroSection = () => {
           xl: 20,
         }}
         transform="rotate(-45.39deg)"
+        display={{
+          base: 'none',
+          lg: 'block',
+        }}
       >
         PHÁT TRIỂN KINH TẾ <br />
         VÀ THƯƠNG MẠI
@@ -40,15 +47,25 @@ const IntroSection = () => {
         bgPosition="100% 0px"
         bgRepeat="no-repeat"
         bgSize={{
-          base: '400px',
+          base: '200px',
+          lg: '400px',
           xl: '521px',
         }}
         h={{
-          base: '900px',
+          base: '800px',
+          lg: '900px',
           xl: '1100px',
         }}
       >
-        <VStack h="100%" justifyContent="center" alignItems="center">
+        <VStack
+          h="100%"
+          justifyContent="center"
+          alignItems="center"
+          px={{
+            base: '20px',
+            lg: 0,
+          }}
+        >
           <Box bg="rgba(39, 39, 39, 0.3)" w="100%">
             <VStack my="33px">
               <Text
@@ -84,7 +101,12 @@ const IntroSection = () => {
               >
                 kỷ niệm hằng năm quan hệ ngoại giao việt nam - hàn quốc
               </Text>
-              <Box w="650px">
+              <Box
+                w={{
+                  base: '100%',
+                  lg: '650px',
+                }}
+              >
                 <Text
                   mt="32px"
                   fontSize="14px"

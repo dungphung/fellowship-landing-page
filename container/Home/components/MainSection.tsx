@@ -9,6 +9,7 @@ import {
   Text,
   VStack,
 } from '@chakra-ui/react'
+import { Link } from 'react-scroll'
 
 const MainSection = () => {
   return (
@@ -18,24 +19,32 @@ const MainSection = () => {
           base: '136px',
         }}
         templateColumns="repeat(6, 1fr)"
-        paddingRight="90px"
+        paddingRight={{
+          base: 0,
+          lg: '90px',
+        }}
       >
-        <GridItem colSpan={4} position="relative">
+        <GridItem
+          colSpan={{
+            base: 6,
+            lg: 4,
+          }}
+          position="relative"
+        >
           <Image
             src="/assets/images/home/1.png"
             w={{
-              base: '730px',
+              base: '100%',
               lg: '530px',
               xl: '730px',
             }}
             h={{
-              base: '608px',
+              base: '100%',
               lg: '500px',
               xl: '608px',
             }}
             alt="co"
           />
-
           <Text
             fontSize={{
               base: '30px',
@@ -48,16 +57,29 @@ const MainSection = () => {
             transform="rotate(-45deg)"
             position="absolute"
             bottom={0}
+            display={{
+              base: 'none',
+              lg: 'block',
+            }}
           >
             NFT FELLOWSHIP
           </Text>
         </GridItem>
-        <GridItem colSpan={2}>
+        <GridItem
+          colSpan={{
+            base: 6,
+            lg: 2,
+          }}
+        >
           <VStack
             h="100%"
             spacing="26px"
             alignItems="center"
             justifyContent="center"
+            px={{
+              base: '20px',
+              lg: 0,
+            }}
           >
             <Text
               fontSize="40px"
@@ -66,7 +88,10 @@ const MainSection = () => {
               letterSpacing="0.19em"
               textAlign="center"
               color="yellow_primary.1"
-              w="351px"
+              w={{
+                base: '100%',
+                lg: '351px',
+              }}
             >
               THE NFT FELLOWSHIP
             </Text>
@@ -77,7 +102,10 @@ const MainSection = () => {
               fontWeight="400"
               lineHeight="20px"
               textAlign="center"
-              w="458px"
+              w={{
+                base: '100%',
+                lg: '458px',
+              }}
             >
               Bộ sưu tập NFT quyền lực nhất dành cho những nhân vật đóng góp và
               mong muốn đóng góp cho sự phát triển kinh tế văn hóa giữa hai quốc
@@ -102,8 +130,16 @@ const MainSection = () => {
           </VStack>
         </GridItem>
       </Grid>
-      <HStack justifyContent="center">
-        <Image src="/assets/images/home/arrow-down.png" alt="arrow-down" />
+      <HStack
+        justifyContent="center"
+        mt={{
+          base: 5,
+          lg: 0,
+        }}
+      >
+        <Link to="story" spy={true} smooth={true}>
+          <Image src="/assets/images/home/arrow-down.png" alt="arrow-down" />
+        </Link>
       </HStack>
     </Box>
   )

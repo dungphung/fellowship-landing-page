@@ -10,18 +10,28 @@ const SecondSection = () => {
         bgRepeat="no-repeat"
         bgPosition="top right"
         bgSize={{
-          base: '500px 1066px',
+          base: '180px 700px',
+          lg: '500px 1066px',
           xl: '700px 1266px',
         }}
+        id="story"
       >
-        <VStack>
+        <VStack
+          px={{
+            base: '20px',
+            lg: 0,
+          }}
+        >
           <Text
             fontStyle="italic"
             fontSize="22px"
             lineHeight="31px"
             textAlign="center"
             color="yellow_primary.1"
-            w="700px"
+            w={{
+              base: '100%',
+              lg: '700px',
+            }}
           >
             Hơn 30 năm gắn kết và phát triển, mối quan hệ giữa hai nước Việt Nam
             và Hàn Quốc ngày một vững mạnh. Các cơ hội đầu tư, giao thương kinh
@@ -32,13 +42,28 @@ const SecondSection = () => {
           </Text>
         </VStack>
 
-        <SimpleGrid columns={2} marginTop="300px" ml="85px">
+        <SimpleGrid
+          columns={{
+            base: 1,
+            lg: 2,
+          }}
+          marginTop="300px"
+          ml={{
+            base: '20px',
+            lg: '85px',
+          }}
+          mr={{
+            base: '20px',
+            lg: '0',
+          }}
+          id="viko-fellowship"
+        >
           <Box flex={1}>
             <VStack spacing="22px">
               <Text
                 letterSpacing="0.26em"
                 w={{
-                  base: '409px',
+                  base: '100%',
                   lg: '409px',
                   xl: '509px',
                 }}
@@ -52,7 +77,7 @@ const SecondSection = () => {
               </Text>
               <Text
                 w={{
-                  lg: '509px',
+                  lg: '100%',
                   xl: '671px',
                 }}
                 fontSize="22px"
@@ -79,26 +104,80 @@ const SecondSection = () => {
           bgRepeat="no-repeat"
           bgPosition="top left"
           bgSize={{
-            base: '400px 800px',
+            base: '200px 600px',
+            lg: '400px 800px',
             xl: '600px 1066px',
           }}
         >
-          <VStack marginTop="288px">
+          <VStack
+            marginTop={{
+              base: '100px',
+              lg: '288px',
+            }}
+          >
             <HStack spacing="40px">
-              <Image src="/assets/images/home/3.png" alt="vn" />
-              <Image src="/assets/images/home/3.png" alt="vn" />
-              <Image src="/assets/images/home/3.png" alt="vn" />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/3.png"
+                alt="vn"
+              />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/3.png"
+                alt="vn"
+              />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/3.png"
+                alt="vn"
+              />
             </HStack>
           </VStack>
 
-          <SimpleGrid columns={2} marginTop="230px">
+          <SimpleGrid
+            columns={{
+              base: 1,
+              lg: 2,
+            }}
+            marginTop="230px"
+          >
             <Box flex={1} />
             <Box flex={1}>
-              <VStack paddingRight="32px">
+              <VStack
+                paddingRight={{
+                  base: '20px',
+                  lg: '32px',
+                }}
+                paddingLeft={{
+                  base: '20px',
+                  lg: 0,
+                }}
+              >
                 <Text
                   letterSpacing="0.26em"
                   w={{
-                    base: '409px',
+                    base: '100%',
                     lg: '509px',
                   }}
                   fontWeight="700"
@@ -111,7 +190,7 @@ const SecondSection = () => {
                 </Text>
                 <Text
                   w={{
-                    base: '400px',
+                    base: '100%',
                     lg: '500px',
                     xl: '671px',
                   }}
@@ -140,9 +219,42 @@ const SecondSection = () => {
             }}
           >
             <HStack spacing="40px">
-              <Image src="/assets/images/home/4.png" alt="vn" />
-              <Image src="/assets/images/home/4.png" alt="vn" />
-              <Image src="/assets/images/home/4.png" alt="vn" />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/4.png"
+                alt="vn"
+              />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/4.png"
+                alt="vn"
+              />
+              <Image
+                w={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                h={{
+                  base: '80px',
+                  lg: '150px',
+                }}
+                src="/assets/images/home/4.png"
+                alt="vn"
+              />
             </HStack>
           </VStack>
         </Box>

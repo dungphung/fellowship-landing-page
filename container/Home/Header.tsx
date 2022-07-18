@@ -25,6 +25,10 @@ const Header = () => {
           xl: '25px',
           xxl: '50px',
         }}
+        display={{
+          base: 'none',
+          lg: 'flex',
+        }}
       >
         <Button
           color="#D9D9D9"
@@ -42,7 +46,9 @@ const Header = () => {
           fontSize="16px"
           lineHeight="19px"
         >
-          Home
+          <Link to="home" spy={true} smooth={true}>
+            Home
+          </Link>
         </Button>
         <Button
           color="#D9D9D9"
@@ -60,7 +66,9 @@ const Header = () => {
           fontSize="16px"
           lineHeight="19px"
         >
-          Story
+          <Link to="story" spy={true} smooth={true}>
+            Story
+          </Link>
         </Button>
         <Button
           color="#D9D9D9"
@@ -78,7 +86,9 @@ const Header = () => {
           fontSize="16px"
           lineHeight="19px"
         >
-          VIKO Fellowship{' '}
+          <Link to="viko-fellowship" spy={true} smooth={true}>
+            VIKO Fellowship
+          </Link>
         </Button>
         <Button
           color="#D9D9D9"
@@ -96,7 +106,9 @@ const Header = () => {
           fontSize="16px"
           lineHeight="19px"
         >
-          Club
+          <Link to="club" spy={true} smooth={true}>
+            Club
+          </Link>
         </Button>
         <Button
           color="#D9D9D9"
@@ -114,7 +126,9 @@ const Header = () => {
           fontSize="16px"
           lineHeight="19px"
         >
-          Activities{' '}
+          <Link to="activities" spy={true} smooth={true}>
+            Activities
+          </Link>
         </Button>
         <Image src="/assets/images/home/profile.svg" alt="profile" />
         <Image src="/assets/images/home/shoping-card.svg" alt="shoping-card" />

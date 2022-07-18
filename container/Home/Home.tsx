@@ -24,6 +24,7 @@ const Home = () => {
           xl: '813px 1106px',
         }}
         bgRepeat="no-repeat"
+        id="home"
       >
         <MainSection />
         <SecondSection />

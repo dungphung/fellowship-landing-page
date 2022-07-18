@@ -12,8 +12,14 @@ const FellowShipClubSection = () => {
         base: '32px',
         xl: '92px',
       }}
+      id="club"
     >
-      <GridItem colSpan={2}>
+      <GridItem
+        colSpan={{
+          base: 5,
+          lg: 2,
+        }}
+      >
         <Text
           fontSize="50px"
           lineHeight="66px"
@@ -40,11 +46,17 @@ const FellowShipClubSection = () => {
           How to join
         </Button>
       </GridItem>
-      <GridItem colSpan={3}>
+      <GridItem
+        colSpan={{
+          base: 5,
+          lg: 3,
+        }}
+      >
         <HStack justifyContent="flex-end">
           <Image
             h={{
-              base: '625px',
+              base: '100%',
+              lg: '625px',
             }}
             src="/assets/images/home/FellowShipClub/background.png"
           />
