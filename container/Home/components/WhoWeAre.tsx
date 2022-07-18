@@ -23,6 +23,8 @@ const WhoWeAre = () => {
             w={{
               base: '200px',
               lg: '346px',
+              xl: '246px',
+              xxl: '346px',
             }}
             src="/assets/images/home/AboutUs/whoweare.png"
             alt="whoweare"
@@ -35,9 +37,9 @@ const WhoWeAre = () => {
                 lg: '20px',
               }}
               fontWeight="900"
-              lineHeight="50px"
               textTransform="uppercase"
               color="yellow_primary.1"
+              fontFamily="Roboto"
             >
               Trần quang huy
             </Text>
@@ -46,6 +48,7 @@ const WhoWeAre = () => {
               fontWeight="500"
               textTransform="capitalize"
               color="white"
+              fontFamily="Roboto"
             >
               Chairman
             </Text>
@@ -84,6 +87,7 @@ const WhoWeAre = () => {
             fontSize="20px"
             fontWeight="400"
             lineHeight="28px"
+            fontFamily="Roboto"
           >
             VIKOTRA is an implemetation organization under{' '}
             <Text as="span" color="white" fontWeight="500">
@@ -101,6 +105,7 @@ const WhoWeAre = () => {
             fontSize="20px"
             fontWeight="400"
             lineHeight="28px"
+            fontFamily="Roboto"
           >
             VIKO 30 is music festival organized by VIKOTRA to celebrate the 30th
             anniversary of diplomatic relations and strategic partnership
@@ -109,12 +114,13 @@ const WhoWeAre = () => {
             Vietnam - Korea.
           </Text>
           <HStack spacing="16px" marginTop="20px">
-            <Image src="/assets/images/home/FellowShipClub/dot.svg" />
+            <Image src="/assets/images/home/FellowShipClub/dot.svg" alt="dot" />
             <Text
               color="white"
               fontSize="20px"
               fontWeight="400"
               lineHeight="28px"
+              fontFamily="Roboto"
             >
               We hope to receive a lot of cooperation, companionship and support
               to make this program a resounding success.

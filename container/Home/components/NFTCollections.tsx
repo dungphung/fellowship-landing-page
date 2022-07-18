@@ -18,6 +18,7 @@ const ItemNFT = ({ title = '', description = '' }) => {
         {title}
       </Text>
       <Text
+        fontFamily="SVN-Avo"
         fontWeight="400"
         fontSize="14px"
         lineHeight="20px"

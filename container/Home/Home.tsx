@@ -19,9 +19,11 @@ const Home = () => {
           '2xl': '/assets/images/home/9@3x.png',
         }}
         bgSize={{
-          base: '813px 1106px',
+          base: '513px 706px',
           lg: '613px 900px',
-          xl: '813px 1106px',
+          xl: '713px 1006px',
+          xxl: '813px 1106px',
+          '2xl': '813px 1106px',
         }}
         bgRepeat="no-repeat"
         id="home"

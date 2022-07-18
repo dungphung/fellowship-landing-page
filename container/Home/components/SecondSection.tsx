@@ -8,11 +8,14 @@ const SecondSection = () => {
           base: '/assets/images/home/2@x1.png',
         }}
         bgRepeat="no-repeat"
-        bgPosition="top right"
+        bgPosition={{
+          base: '100% 20%',
+          lg: 'top right',
+        }}
         bgSize={{
-          base: '180px 700px',
+          base: '280px 600px',
           lg: '500px 1066px',
-          xl: '700px 1266px',
+          xxl: '600px 1266px',
         }}
         id="story"
       >
@@ -32,6 +35,8 @@ const SecondSection = () => {
               base: '100%',
               lg: '700px',
             }}
+            fontFamily="SVN-Avo"
+            fontWeight="400"
           >
             Hơn 30 năm gắn kết và phát triển, mối quan hệ giữa hai nước Việt Nam
             và Hàn Quốc ngày một vững mạnh. Các cơ hội đầu tư, giao thương kinh
@@ -83,6 +88,7 @@ const SecondSection = () => {
                 fontSize="22px"
                 color="white"
                 lineHeight="31px"
+                fontFamily="SVN-Avo"
                 fontWeight="400"
                 textAlign="center"
               >
@@ -102,9 +108,12 @@ const SecondSection = () => {
             base: '/assets/images/home/5.png',
           }}
           bgRepeat="no-repeat"
-          bgPosition="top left"
+          bgPosition={{
+            base: '0% 0%',
+            lg: 'top left',
+          }}
           bgSize={{
-            base: '200px 600px',
+            base: '200px 500px',
             lg: '400px 800px',
             xl: '600px 1066px',
           }}
@@ -192,11 +201,12 @@ const SecondSection = () => {
                   w={{
                     base: '100%',
                     lg: '500px',
-                    xl: '671px',
+                    xxl: '671px',
                   }}
                   fontSize="22px"
                   color="white"
                   lineHeight="31px"
+                  fontFamily="SVN-Avo"
                   fontWeight="400"
                   textAlign="center"
                 >

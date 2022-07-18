@@ -25,6 +25,10 @@ const MainSection = () => {
         }}
       >
         <GridItem
+          order={{
+            base: 2,
+            lg: 1,
+          }}
           colSpan={{
             base: 6,
             lg: 4,
@@ -36,12 +40,13 @@ const MainSection = () => {
             w={{
               base: '100%',
               lg: '530px',
-              xl: '730px',
+              xl: '630px',
+              xxl: '730px',
             }}
             h={{
               base: '100%',
               lg: '500px',
-              xl: '608px',
+              xxl: '608px',
             }}
             alt="co"
           />
@@ -56,7 +61,11 @@ const MainSection = () => {
             color="white"
             transform="rotate(-45deg)"
             position="absolute"
-            bottom={0}
+            bottom={{
+              base: 0,
+              xl: -10,
+            }}
+            right={10}
             display={{
               base: 'none',
               lg: 'block',
@@ -66,6 +75,10 @@ const MainSection = () => {
           </Text>
         </GridItem>
         <GridItem
+          order={{
+            base: 1,
+            lg: 2,
+          }}
           colSpan={{
             base: 6,
             lg: 2,
@@ -106,16 +119,23 @@ const MainSection = () => {
                 base: '100%',
                 lg: '458px',
               }}
+              fontFamily="SVN-Avo"
             >
               Bộ sưu tập NFT quyền lực nhất dành cho những nhân vật đóng góp và
               mong muốn đóng góp cho sự phát triển kinh tế văn hóa giữa hai quốc
               gia Việt Nam Hàn Quốc
             </Text>
-            <HStack>
+            <HStack spacing="25px">
               <Button
                 bg="transparent !important"
                 border="1px solid #FFFFFF !important"
                 color="white"
+                fontFamily="SVN-Avo"
+                w={{
+                  base: '100%',
+                  lg: '203px',
+                }}
+                fontWeight="400"
               >
                 Lịch sử hình thành
               </Button>
@@ -123,6 +143,12 @@ const MainSection = () => {
                 bg="transparent !important"
                 border="1px solid #FFFFFF !important"
                 color="white"
+                fontFamily="SVN-Avo"
+                fontWeight="400"
+                w={{
+                  base: '100%',
+                  lg: '193px',
+                }}
               >
                 Bộ sưu tập NFT
               </Button>

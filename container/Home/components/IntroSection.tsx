@@ -114,17 +114,24 @@ const IntroSection = () => {
                   textAlign="center"
                   letterSpacing="0.01em"
                   color="white"
+                  fontFamily="SVN-Avo"
+                  fontWeight="400"
                 >
-                  VIKO30 là chuỗi hoạt động chào mừngkỷ niệm 30 năm quan hệ
-                  ngoại giao Việt Nam - Hàn Quốc.VIKO30 bao gồm nhiều hoạt động
-                  chào mừng như:
+                  VIKO 30 là chuỗi hoạt động chào mừng <br /> kỷ niệm 30 năm
+                  quan hệ ngoại giao Việt Nam - Hàn Quốc.VIKO30 bao gồm nhiều
+                  hoạt động chào mừng như:
                 </Text>
                 <Text
                   fontSize="14px"
-                  lineHeight="20px"
+                  lineHeight={{
+                    base: '20px',
+                    lg: '30px',
+                  }}
                   textAlign="center"
                   letterSpacing="0.01em"
                   color="white"
+                  fontFamily="SVN-Avo"
+                  fontWeight="400"
                 >
                   - KHAI MẠC TRIỂN LÃM CÔNG NGHỆ VIKO 30. <br />- HỘI THẢO
                   BLOCKCHAIN VIỆT NAM TRONG KỶ NGUYÊN CHUYỂN ĐỔI SỐ. <br />- HỘI
@@ -145,6 +152,8 @@ const IntroSection = () => {
                   color="white"
                   border="1px solid #FFFFFF"
                   background="transparent !important"
+                  borderRadius={0}
+                  w="115px"
                 >
                   Xem thêm
                 </Button>

@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <Box
       position="relative"
-      bgImage="/assets/images/home/11@2x.png"
+      bgImage="/assets/images/home/11.png"
       bgPosition="left center"
       bgRepeat="no-repeat"
       bgSize={{

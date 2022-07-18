@@ -15,6 +15,10 @@ const FellowShipClubSection = () => {
       id="club"
     >
       <GridItem
+        order={{
+          base: 2,
+          lg: 1,
+        }}
         colSpan={{
           base: 5,
           lg: 2,
@@ -35,6 +39,8 @@ const FellowShipClubSection = () => {
           fontSize="18px"
           fontWeight="400"
           lineHeight="30px"
+          fontFamily="Roboto"
+          opacity={0.5}
         >
           Là câu lạc bộ các thành viên sở hữu NFT VIKO Fellowship. Các thành
           viên của Club sẽ được tiết lộ dần dần và hoạt động của CLUB sẽ do hội
@@ -42,11 +48,20 @@ const FellowShipClubSection = () => {
           nào sẽ là thành viên của Club đó. Các thành viên muốn tham gia các
           Club cao hơn cần sở hữu NFT tương ứng.
         </Text>
-        <Button marginTop="14px" bg="#FFC700 !important">
+        <Button
+          marginTop="44px"
+          bg="#FFC700 !important"
+          borderRadius="10px"
+          w="189px"
+        >
           How to join
         </Button>
       </GridItem>
       <GridItem
+        order={{
+          base: 1,
+          lg: 2,
+        }}
         colSpan={{
           base: 5,
           lg: 3,

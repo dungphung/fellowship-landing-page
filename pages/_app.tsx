@@ -22,7 +22,7 @@ const breakpoints = {
   '2lg': '64em',
   '3lg': '68.75em',
   xl: '80em',
-  xxl: '90.25em',
+  xxl: '90em',
   '2xl': '96em',
 }
 

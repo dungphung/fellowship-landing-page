@@ -45,6 +45,7 @@ const Header = () => {
           fontWeight="700"
           fontSize="16px"
           lineHeight="19px"
+          fontFamily="Roboto"
         >
           <Link to="home" spy={true} smooth={true}>
             Home
@@ -65,6 +66,7 @@ const Header = () => {
           fontWeight="700"
           fontSize="16px"
           lineHeight="19px"
+          fontFamily="Roboto"
         >
           <Link to="story" spy={true} smooth={true}>
             Story
@@ -85,6 +87,7 @@ const Header = () => {
           fontWeight="700"
           fontSize="16px"
           lineHeight="19px"
+          fontFamily="Roboto"
         >
           <Link to="viko-fellowship" spy={true} smooth={true}>
             VIKO Fellowship
@@ -105,6 +108,7 @@ const Header = () => {
           fontWeight="700"
           fontSize="16px"
           lineHeight="19px"
+          fontFamily="Roboto"
         >
           <Link to="club" spy={true} smooth={true}>
             Club
@@ -125,6 +129,7 @@ const Header = () => {
           fontWeight="700"
           fontSize="16px"
           lineHeight="19px"
+          fontFamily="Roboto"
         >
           <Link to="activities" spy={true} smooth={true}>
             Activities
