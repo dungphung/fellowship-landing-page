@@ -1,6 +1,12 @@
 import { Box, Image, SimpleGrid, Text, VStack } from '@chakra-ui/react'
 
-const ItemNFT = ({ title = '', description = '' }) => {
+const ItemNFT = ({
+  title = '',
+  description = '',
+}: {
+  title: string
+  description: any
+}) => {
   return (
     <VStack>
       <Image
