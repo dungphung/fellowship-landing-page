@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import { ChakraProvider } from '@chakra-ui/react'
 
 import { extendTheme } from '@chakra-ui/react'
+import { useEffect, useState } from 'react'
 
 // 2. Extend the theme to include custom colors, fonts, etc
 const colors = {
@@ -29,11 +30,23 @@ const breakpoints = {
 const theme = extendTheme({ colors, breakpoints })
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
-  )
+  const [showChild, setShowChild] = useState(false)
+  useEffect(() => {
+    setShowChild(true)
+  }, [])
+
+  if (!showChild) {
+    return null
+  }
+  if (typeof window === 'undefined') {
+    return <></>
+  } else {
+    return (
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+    )
+  }
 }
 
 export default MyApp
